@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: 
+      - 'main'
+  workflow_dispatch:
+
+env:
+    test_env: testing_env
+
+jobs:
+ deploy-website:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: install terraform 
+        run: |
+          echo placeholder
+
+      - name: terraform workflow
+        run: |
+          echo placeholder
+
+      - name: aws workflow
+        run: |
+          echo placeholder
+
+
